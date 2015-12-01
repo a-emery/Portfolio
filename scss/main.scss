@@ -13,14 +13,15 @@ $about-color: rgba(208, 208, 208, 1);
 body {
   padding: 0;
   margin: 0 auto;
-  font-family: 'Tall Films', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   min-width: 1360px;
 }
 
 // HOME //
 
 .hero {
-  background: url('../images/background.jpeg');
+  font-family: "Tall Films";
+  background: url('../images/background2.jpg');
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -34,12 +35,12 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, .9);
+  background: rgba(31, 44, 56, .9);
 }
 
 .header {
   height: 75px;
-  background: rgba(0, 0, 0, .95);
+  background: rgba(31, 44, 56, .9);
   padding: 0 10%;
 }
 
@@ -47,7 +48,7 @@ body {
   margin: 0;
   color: $header-text;
   float: left;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 2.5rem;
   position: relative;
   top: 50%;
@@ -99,7 +100,7 @@ body {
 .heroContentHeader {
   color: $contrast-color;
   margin: 0;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 6rem;
   text-align: center;
   position: relative;
@@ -122,8 +123,17 @@ body {
 
 .projects {
   min-height: 100vh;
-  background: rgba(34, 34, 34, 1);
+  background: url('../images/background3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: rgba(208, 208, 208, 1);
+  position: relative;
+}
+
+.projectsCover {
+  background: rgba(239, 251, 254, 1);
   padding: 40px 0 100px 0;
 }
 
@@ -131,6 +141,7 @@ body {
   margin: 0 auto 40px auto;
   text-align: center;
   font-size: 4rem;
+  font-weight: lighter;
 }
 
 .projectsList {
@@ -157,7 +168,8 @@ body {
 
 .projectListItemDescription {
   position: absolute;
-  border-radius: 3px;
+  padding: 10px;
+  border-radius: 5px;
   top: 0;
   bottom: 4px;
   left: 0;
@@ -173,11 +185,13 @@ body {
 
 .projectListItemDescriptionName {
   font-size: 3rem;
+  font-weight: lighter;
   color: $header-text;
+  margin: 5px auto 10px auto;
 }
 
 .projectListItemDescriptionText {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 1.1px;
   line-height: 3rem;
 }
@@ -200,21 +214,24 @@ body {
 
 .projectListItemImage {
   width: 100%;
-  border-radius: 3px;
+  border-radius: 5px;
 
 }
 
 // ABOUT //
 
 .about {
-  height: 100vh;
-  background: $header-text;
+  min-height: calc(100vh - 140px);
+  background: rgba(34, 34, 34, .99);
   color: $contrast-color;
+  padding: 40px 0 100px 0;
 }
 
 .aboutHeader {
-  margin: 0;
-  padding: 100px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 4rem;
 }
 
 .contact {
