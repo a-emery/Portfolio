@@ -12,9 +12,9 @@ $about-color: rgba(208, 208, 208, 1);
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Tall Films', sans-serif;
-  min-width: 1375px;
+  min-width: 1360px;
 }
 
 // HOME //
@@ -142,7 +142,7 @@ body {
 
 .projectsListItem {
   box-sizing: border-box;
-  margin: 0 0 0 0;
+  margin: 0 0 20px 0;
   padding: 10px;
   width: 50%;
   display: inline-block;
