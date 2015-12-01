@@ -1,0 +1,224 @@
+// Colors //
+
+$header-text: rgba(221, 221, 221, 1);
+$contrast-color: rgba(237, 115, 49, 1);
+$about-color: rgba(208, 208, 208, 1);
+
+
+@font-face {
+  font-family: "Tall Films";
+  src: url(../Tall_Films_Expanded.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Tall Films', sans-serif;
+  min-width: 1375px;
+}
+
+// HOME //
+
+.hero {
+  background: url('../images/background.jpeg');
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.heroCover {
+  position: absolute;
+  top: 75px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .9);
+}
+
+.header {
+  height: 75px;
+  background: rgba(0, 0, 0, .95);
+  padding: 0 10%;
+}
+
+.headerName {
+  margin: 0;
+  color: $header-text;
+  float: left;
+  font-weight: normal;
+  font-size: 2.5rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.headerList {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.headerListItem {
+  display: inline-block;
+  margin: 0 25px;
+  font-size: 2rem;
+}
+
+.headerListItemLink {
+  color: $header-text;
+  text-decoration: none;
+  position: relative;
+}
+
+.headerListItemLink:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid $contrast-color;
+  width: 0;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transition: .3s ease;
+}
+
+.headerListItemLink:hover:after {
+  left: -10%;
+  width: 120%;
+}
+
+.heroContent {
+  height: calc(100vh - 75px);
+}
+
+.heroContentHeader {
+  color: $contrast-color;
+  margin: 0;
+  font-weight: normal;
+  font-size: 6rem;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-110%);
+}
+
+.heroContentSubheader {
+  color: $contrast-color;
+  margin: 0;
+  font-weight: normal;
+  font-size: 4rem;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-110%);
+}
+
+// PROJECTS //
+
+.projects {
+  min-height: 100vh;
+  background: rgba(34, 34, 34, 1);
+  color: rgba(208, 208, 208, 1);
+}
+
+.projectsHeader {
+  margin: 0 auto 20px auto;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 3rem;
+}
+
+.projectsList {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.projectsListItem {
+  box-sizing: border-box;
+  margin: 0 0 0 0;
+  padding: 10px;
+  width: 50%;
+  display: inline-block;
+}
+
+.projectListItemImageContainer {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.projectListItemDescription {
+  position: absolute;
+  border-radius: 3px;
+  top: 0;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  background: $contrast-color;
+  opacity: 0;
+  transition: opacity .75s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.projectListItemDescriptionName {
+  font-size: 3rem;
+  color: $header-text;
+}
+
+.projectListItemDescriptionText {
+  font-size: 2rem;
+  letter-spacing: 1.1px;
+  line-height: 3rem;
+}
+
+.projectListItemDescriptionLink {
+  border: 1px solid $header-text;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: $header-text;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 1.5rem;
+
+  &:hover {
+    background: $header-text;
+    color: $contrast-color;
+  }
+}
+
+.projectListItemImage {
+  width: 100%;
+  border-radius: 3px;
+
+}
+
+// ABOUT //
+
+.about {
+  height: 100vh;
+  background: $header-text;
+  color: $contrast-color;
+}
+
+.aboutHeader {
+  margin: 0;
+  padding: 100px;
+}
+
+.contact {
+  height: 100vh;
+  background: rgba(34, 34, 34, 1);
+  color: rgba(208, 208, 208, 1);
+}
