@@ -98,13 +98,13 @@ body {
 .projects {
   min-height: 100vh;
   background: #222222;
-  color: #d0d0d0; }
+  color: #d0d0d0;
+  padding: 40px 0 100px 0; }
 
 .projectsHeader {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 40px auto;
   text-align: center;
-  padding-top: 40px;
-  font-size: 3rem; }
+  font-size: 4rem; }
 
 .projectsList {
   margin: 0;
@@ -136,7 +136,7 @@ body {
   opacity: 0;
   transition: opacity 0.75s ease; }
   .projectListItemDescription:hover {
-    opacity: 1; }
+    opacity: .97; }
 
 .projectListItemDescriptionName {
   font-size: 3rem;

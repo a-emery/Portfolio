@@ -124,13 +124,13 @@ body {
   min-height: 100vh;
   background: rgba(34, 34, 34, 1);
   color: rgba(208, 208, 208, 1);
+  padding: 40px 0 100px 0;
 }
 
 .projectsHeader {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 40px auto;
   text-align: center;
-  padding-top: 40px;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .projectsList {
@@ -167,7 +167,7 @@ body {
   transition: opacity .75s ease;
 
   &:hover {
-    opacity: 1;
+    opacity: .97;
   }
 }
 
