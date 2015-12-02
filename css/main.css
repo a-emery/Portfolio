@@ -149,14 +149,15 @@ body {
   font-size: 1.5rem;
   font-weight: lighter;
   text-align: center;
-  margin: 0 15%;
-  padding-bottom: 80px;
+  margin: 0 10%;
+  padding: 0 5% 80px 5%;
   border-bottom: 1px solid #e8ebee; }
 
 .aboutWhatIKnowContainer {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  padding: 40px 0; }
+  padding: 80px 0;
+  border-bottom: 1px solid #e8ebee; }
   .aboutWhatIKnowContainer::after {
     clear: both;
     content: "";
@@ -165,7 +166,9 @@ body {
 .aboutWhatIKnowContainerLeft {
   width: 49%;
   display: inline-block;
-  float: left; }
+  float: left;
+  box-sizing: border-box;
+  padding-left: 5%; }
 
 .aboutWhatIKnowContainerLeftHeading {
   font-weight: lighter;
@@ -176,7 +179,9 @@ body {
 .aboutWhatIKnowContainerRight {
   width: 49%;
   display: inline-block;
-  float: right; }
+  float: right;
+  box-sizing: border-box;
+  padding-right: 5%; }
 
 .aboutWhatIKnowList {
   list-style: none;
@@ -186,24 +191,24 @@ body {
 .aboutWhatIKnowListItem {
   background: #e8ebee;
   color: #f1fbfd;
-  padding: 5px;
+  padding: 4px;
   border-radius: 5px;
   margin: 5px; }
 
 .aboutWhatIKnowListItemName {
   background: #ed7331;
   color: #dddddd;
-  padding: 5px;
+  padding: 2px 10px;
   border-radius: 5px; }
 
 .html {
-  width: 85%; }
+  width: 90%; }
 
 .javascript {
-  width: 75%; }
+  width: 80%; }
 
 .react {
-  width: 65%; }
+  width: 70%; }
 
 .jquery {
   width: 70%; }
@@ -212,7 +217,19 @@ body {
   width: 65%; }
 
 .backbone {
+  width: 70%; }
+
+.git {
+  width: 50%; }
+
+.ajax {
   width: 60%; }
+
+.bourbon {
+  width: 75%; }
+
+.parse {
+  width: 55%; }
 
 .projects {
   min-height: 100vh;
