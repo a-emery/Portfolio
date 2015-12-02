@@ -1,3 +1,5 @@
+@import '../node_modules/bourbon/app/assets/stylesheets/bourbon';
+
 // Colors //
 
 $header-text: rgba(221, 221, 221, 1);
@@ -109,6 +111,26 @@ body {
   width: 120%;
 }
 
+.headerArrowContainer {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  @include clearfix;
+  display: none;
+  margin-left: 5%;
+}
+
+.headerArrow {
+  height: 50px;
+  display: block;
+}
+
+.headerArrowHover {
+  height: 50px;
+  display: none;
+}
+
 .heroContent {
   height: calc(100vh - 75px);
 }
@@ -135,6 +157,24 @@ body {
   transform: translateY(-110%);
 }
 
+// ABOUT //
+
+.about {
+  min-height: calc(100vh - 140px);
+  background: rgba(239, 251, 254, 1);
+  color: $contrast-color;
+  padding: 115px 0 100px 0;
+  margin-top: 100vh;
+
+}
+
+.aboutHeader {
+  margin: 0 auto 40px auto;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 4rem;
+}
+
 // PROJECTS //
 
 .projects {
@@ -146,12 +186,11 @@ body {
   background-attachment: fixed;
   color: rgba(208, 208, 208, 1);
   position: relative;
-  margin-top: 100vh;
 }
 
 .projectsCover {
   background: rgba(239, 251, 254, 1);
-  padding: 40px 0 100px 0;
+  padding: 115px 0 100px 0;
 }
 
 .projectsHeader {
@@ -235,21 +274,7 @@ body {
 
 }
 
-// ABOUT //
-
-.about {
-  min-height: calc(100vh - 140px);
-  background: rgba(34, 34, 34, 1);
-  color: $contrast-color;
-  padding: 40px 0 100px 0;
-}
-
-.aboutHeader {
-  margin: 0 auto 40px auto;
-  text-align: center;
-  font-weight: lighter;
-  font-size: 4rem;
-}
+// CONTACT //
 
 .contact {
   height: 100vh;
