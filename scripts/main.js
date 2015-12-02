@@ -1,14 +1,14 @@
 $('#js_aboutLink').click(function(){
-  $.scrollTo($('#about') , 800);
+  $.scrollTo($('#about') , 800, { offset:-75 });
   return false;
 });
 
 $('#js_projectsLink').click(function(){
-  $.scrollTo($('#projects') , 800);
+  $.scrollTo($('#projects') , 800, { offset:-75 });
   return false;
 });
 
 $('#js_contactLink').click(function(){
-  $.scrollTo($('#contact') , 800);
+  $.scrollTo($('#contact') , 800, { offset:-75 });
   return false;
 });
