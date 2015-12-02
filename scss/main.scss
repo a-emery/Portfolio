@@ -163,7 +163,7 @@ body {
   min-height: calc(100vh - 140px);
   background: rgba(239, 251, 254, 1);
   color: $contrast-color;
-  padding: 115px 0 100px 0;
+  padding: 115px 0 10px 0;
   margin-top: 100vh;
 
 }
@@ -173,6 +173,90 @@ body {
   text-align: center;
   font-weight: lighter;
   font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.aboutMe {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 15%;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(232, 235, 238, 1);
+}
+
+.aboutWhatIKnowContainer {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
+  // background: green;
+  @include clearfix;
+}
+
+.aboutWhatIKnowContainerLeft {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  // background: rgba(34, 34, 34, .5);
+}
+
+.aboutWhatIKnowContainerLeftHeading {
+  font-weight: lighter;
+  font-size: 2rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.aboutWhatIKnowContainerRight {
+  width: 49%;
+  display: inline-block;
+  float: right;
+  // background: rgba(134, 134, 134, .5);
+}
+
+.aboutWhatIKnowList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutWhatIKnowListItem {
+  background: rgba(232, 235, 238, 1);
+  color: rgba(241, 251, 253, 1);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.aboutWhatIKnowListItemName {
+  background: $contrast-color;
+  color: $header-text;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.html {
+  width: 85%;
+}
+
+.javascript {
+  width: 75%;
+}
+
+.react {
+  width: 65%;
+}
+
+.jquery {
+  width: 70%;
+}
+
+.underscore {
+  width: 65%;
+}
+
+.backbone {
+  width: 60%;
 }
 
 // PROJECTS //
