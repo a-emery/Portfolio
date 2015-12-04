@@ -10,6 +10,7 @@ $main-background-color: rgba(239, 251, 254, 1);
 $light-text-color: rgba(208, 208, 208, 1);
 $border-color:  rgba(232, 235, 238, 1);
 $dark-background: rgba(34, 34, 34, 1);
+$dark-background-border: rgba(20, 20, 20, 1);
 
 
 
@@ -379,7 +380,7 @@ body {
   min-height: calc(100vh - 115px);
   background: $dark-background;
   color: $light-text-color;
-  padding: 115px 10% 0 10%;
+  padding: 115px 10% 50px 10%;
   color: $contrast-color;
   @include clearfix;
 }
@@ -408,10 +409,19 @@ body {
 .contactLink {
   // display: block;
   text-decoration: none;
+  box-sizing: border-box;
   color: $contrast-color;
   font-size: 1.5rem;
   font-weight: lighter;
   line-height: 2.25rem;
+  padding: 3px 18px;
+  border-radius: 3px;
+  transition: all .25s ease;
+
+  &:hover {
+    background: $contrast-color;
+    color: $light-text-color;
+  }
 }
 
 .contactRight {
@@ -433,6 +443,7 @@ body {
   font-size: 1.5rem;
   font-weight: lighter;
   margin: 10px 0;
+  border: none;
 }
 
 .formTopRow {
@@ -454,4 +465,30 @@ body {
 
 .formComments {
   width: 100%;
+}
+
+.formSubmit {
+  width: 45%;
+  color: $light-text-color;
+  background: $contrast-color;
+  transition: all .25s ease;
+
+  &:hover {
+    background: white;
+    color: $contrast-color;
+  }
+}
+
+// FOOTER //
+
+.footer {
+  background: $dark-background;
+  padding: 0 10%;
+}
+
+.footerText {
+  border-top: 1px solid $dark-background-border;
+  color: rgba(237, 115, 49, .4);
+  margin: 0;
+  padding: 10px 0 20px 0;
 }

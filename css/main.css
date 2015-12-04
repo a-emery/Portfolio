@@ -308,7 +308,7 @@ body {
   min-height: calc(100vh - 115px);
   background: #222222;
   color: #d0d0d0;
-  padding: 115px 10% 0 10%;
+  padding: 115px 10% 50px 10%;
   color: #ed7331; }
   .contact::after {
     clear: both;
@@ -334,10 +334,17 @@ body {
 
 .contactLink {
   text-decoration: none;
+  box-sizing: border-box;
   color: #ed7331;
   font-size: 1.5rem;
   font-weight: lighter;
-  line-height: 2.25rem; }
+  line-height: 2.25rem;
+  padding: 3px 18px;
+  border-radius: 3px;
+  transition: all 0.25s ease; }
+  .contactLink:hover {
+    background: #ed7331;
+    color: #d0d0d0; }
 
 .contactRight {
   width: 58%;
@@ -355,7 +362,8 @@ body {
   padding: 5px;
   font-size: 1.5rem;
   font-weight: lighter;
-  margin: 10px 0; }
+  margin: 10px 0;
+  border: none; }
 
 .formTopRow {
   width: 100%; }
@@ -372,3 +380,22 @@ body {
 
 .formComments {
   width: 100%; }
+
+.formSubmit {
+  width: 45%;
+  color: #d0d0d0;
+  background: #ed7331;
+  transition: all 0.25s ease; }
+  .formSubmit:hover {
+    background: white;
+    color: #ed7331; }
+
+.footer {
+  background: #222222;
+  padding: 0 10%; }
+
+.footerText {
+  border-top: 1px solid #141414;
+  color: rgba(237, 115, 49, 0.4);
+  margin: 0;
+  padding: 10px 0 20px 0; }
