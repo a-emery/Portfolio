@@ -103,6 +103,18 @@ body {
   left: 0;
   right: 0;
   background: $body-color-overlay;
+
+  @include media($large-tablet) {
+    top: 0;
+  }
+
+  @include media($mobile) {
+    top: 0;
+  }
+
+  @include media($small-mobile) {
+    top: 0;
+  }
 }
 
 .heroCoverThanks {

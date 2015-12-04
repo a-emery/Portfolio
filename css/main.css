@@ -73,6 +73,15 @@ body {
   left: 0;
   right: 0;
   background: rgba(31, 44, 56, 0.9); }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .heroCover {
+      top: 0; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .heroCover {
+      top: 0; } }
+  @media screen and (max-width: 480px) {
+    .heroCover {
+      top: 0; } }
 
 .heroCoverThanks {
   position: absolute;
