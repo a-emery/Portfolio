@@ -305,6 +305,18 @@ body {
   float: left;
   box-sizing: border-box;
   padding-left: 5%; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .aboutSkillSetContainerLeft {
+      width: 100%;
+      text-align: center; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .aboutSkillSetContainerLeft {
+      width: 100%;
+      text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .aboutSkillSetContainerLeft {
+      width: 100%;
+      text-align: center; } }
 
 .aboutSkillSetContainerLeftHeading {
   font-weight: lighter;
@@ -317,6 +329,21 @@ body {
   float: right;
   box-sizing: border-box;
   padding-right: 5%; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .aboutSkillSetContainerRight {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .aboutSkillSetContainerRight {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px; } }
+  @media screen and (max-width: 480px) {
+    .aboutSkillSetContainerRight {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px; } }
 
 .aboutSkillSetList {
   list-style: none;

@@ -380,6 +380,21 @@ body {
   float: left;
   box-sizing: border-box;
   padding-left: 5%;
+
+  @include media($large-tablet) {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include media($mobile) {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include media($small-mobile) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .aboutSkillSetContainerLeftHeading {
@@ -394,6 +409,24 @@ body {
   float: right;
   box-sizing: border-box;
   padding-right: 5%;
+
+  @include media($large-tablet) {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  @include media($mobile) {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  @include media($small-mobile) {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 .aboutSkillSetList {
