@@ -54,20 +54,17 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   position: relative; }
   @media screen and (max-width: 925px) and (min-width: 769px) {
     .hero {
-      height: 500px;
-      min-height: 0; } }
+      height: 500px; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .hero {
-      height: 500px;
-      min-height: 0; } }
+      height: 500px; } }
   @media screen and (max-width: 480px) {
     .hero {
-      height: 500px;
-      min-height: 0; } }
+      height: 500px; } }
 
 .heroCover {
   position: absolute;
