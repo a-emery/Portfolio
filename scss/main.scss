@@ -41,6 +41,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   min-width: 1360px;
   background: $body-color;
+  position: relative;
+  z-index: -2;
 
   @include media($large-tablet) {
     min-width: 0;
@@ -497,7 +499,28 @@ body {
   color: $light-text-color;
   position: relative;
   padding: 115px 0 100px 0;
-  z-index: -1;
+
+  @include media($large-tablet) {
+    width: 100%;
+    text-align: center;
+    // margin-top: 15px;
+    z-index: -1;
+  }
+
+  @include media($mobile) {
+    width: 100%;
+    text-align: center;
+    // margin-top: 20px;
+    z-index: -1;
+  }
+
+  @include media($small-mobile) {
+    width: 100%;
+    text-align: center;
+    // margin-top: 20px;
+    z-index: -1;
+  }
+
 }
 
 .projectsHeader {
@@ -521,6 +544,18 @@ body {
   padding: 10px;
   width: 50%;
   display: inline-block;
+
+  @include media($large-tablet) {
+    width: 100%;
+  }
+
+  @include media($mobile) {
+    width: 100%;
+  }
+
+  @include media($small-mobile) {
+    width: 100%;
+  }
 }
 
 .projectListItemImageContainer {
