@@ -82,6 +82,18 @@ body {
   background-size: cover;
   min-height: 100vh;
   position: relative;
+
+  @include media($large-tablet) {
+    min-height: 300px;
+  }
+
+  @include media($mobile) {
+    min-height: 300px;
+  }
+
+  @include media($small-mobile) {
+    min-height: 300px;
+  }
 }
 
 .heroCover {
@@ -154,7 +166,7 @@ body {
 }
 
 .hamburger {
-  height: 40px;
+  height: 30px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);

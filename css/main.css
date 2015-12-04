@@ -56,6 +56,15 @@ body {
   background-size: cover;
   min-height: 100vh;
   position: relative; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .hero {
+      min-height: 300px; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .hero {
+      min-height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .hero {
+      min-height: 300px; } }
 
 .heroCover {
   position: absolute;
@@ -117,7 +126,7 @@ body {
       height: 75px; } }
 
 .hamburger {
-  height: 40px;
+  height: 30px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
