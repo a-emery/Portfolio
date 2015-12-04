@@ -23,6 +23,15 @@ body {
   font-family: 'Open Sans', sans-serif;
   min-width: 1360px;
   background: #1f2c38; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    body {
+      min-width: 0; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    body {
+      min-width: 0; } }
+  @media screen and (max-width: 480px) {
+    body {
+      min-width: 0; } }
 
 .heroContainer {
   position: fixed;
@@ -45,7 +54,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh);
+  min-height: 100vh;
   position: relative; }
 
 .heroCover {
