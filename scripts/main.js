@@ -18,6 +18,21 @@ $('#js_topLink').click(function(){
   return false;
 });
 
+$('.hamburger').click(function(){
+  if($('.hamburgerList').css("z-index") === "-3") {
+    $('.hamburgerList').css("z-index", "3");
+    $('.hamburgerList').css("opacity", "1");
+  } else if ($('.hamburgerList').css("z-index") === "3") {
+    $('.hamburgerList').css("z-index", "-3");
+    $('.hamburgerList').css("opacity", "0");
+  }
+});
+
+$('.hamburgerListItemLink').click(function(){
+  $('.hamburgerList').css("z-index", "-3");
+  $('.hamburgerList').css("opacity", "0");
+});
+
 $('.headerArrowContainer').hover(function() {
   $('.headerArrow').css("display", "none");
   $('.headerArrowHover').css("display", "block");
@@ -25,6 +40,8 @@ $('.headerArrowContainer').hover(function() {
   $('.headerArrow').css("display", "block");
   $('.headerArrowHover').css("display", "none");
 });
+
+// Code to make top button appear at certain height //
 
 var isVisible = false;
 
@@ -38,5 +55,3 @@ $(window).scroll(function(){
           $('.headerArrowContainer').css("display", "none");
     }
 });
-
-// FORM
