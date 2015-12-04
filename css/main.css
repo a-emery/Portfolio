@@ -153,48 +153,47 @@ body {
   margin: 0 10%;
   border-bottom: 1px solid #e8ebee; }
 
-.aboutWhatIKnowContainer {
+.aboutSkillSetContainer {
   width: 80%;
   margin: 0 auto;
   padding: 60px 0 80px 0;
   border-bottom: 1px solid #e8ebee; }
-  .aboutWhatIKnowContainer::after {
+  .aboutSkillSetContainer::after {
     clear: both;
     content: "";
     display: table; }
 
-.aboutWhatIKnowContainerLeft {
+.aboutSkillSetContainerLeft {
   width: 49%;
   display: inline-block;
   float: left;
   box-sizing: border-box;
   padding-left: 5%; }
 
-.aboutWhatIKnowContainerLeftHeading {
+.aboutSkillSetContainerLeftHeading {
   font-weight: lighter;
   font-size: 2.5rem;
   margin: 0 0 20px 0; }
 
-.aboutWhatIKnowContainerRight {
+.aboutSkillSetContainerRight {
   width: 49%;
   display: inline-block;
   float: right;
   box-sizing: border-box;
   padding-right: 5%; }
 
-.aboutWhatIKnowList {
+.aboutSkillSetList {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-.aboutWhatIKnowListItem {
+.aboutSkillSetListItem {
   background: #e8ebee;
-  color: #f1fbfd;
   padding: 4px;
   border-radius: 5px;
   margin: 5px; }
 
-.aboutWhatIKnowListItemName {
+.aboutSkillSetListItemName {
   background: #ed7331;
   color: #dddddd;
   padding: 2px 10px;
