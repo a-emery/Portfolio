@@ -1,3 +1,18 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+/*
+
+@include media($large-tablet) {
+
+}
+
+*/
 @font-face {
   font-family: "Tall Films";
   src: url(../Tall_Films_Expanded.ttf); }
@@ -59,6 +74,57 @@ body {
   left: 0;
   right: 10%;
   z-index: 1; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .header {
+      display: none; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .header {
+      display: none; } }
+  @media screen and (max-width: 480px) {
+    .header {
+      display: none; } }
+
+.hamburgerContainer {
+  background: rgba(31, 44, 56, 0.9);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .hamburgerContainer {
+      display: inline-block;
+      width: 100%;
+      height: 75px; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .hamburgerContainer {
+      display: inline-block;
+      width: 100%;
+      height: 75px; } }
+  @media screen and (max-width: 480px) {
+    .hamburgerContainer {
+      display: inline-block;
+      width: 100%;
+      height: 75px; } }
+
+.hamburger {
+  height: 40px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 0 0 20px;
+  padding: 0;
+  display: none;
+  z-index: 10; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .hamburger {
+      display: inline-block; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .hamburger {
+      display: inline-block; } }
+  @media screen and (max-width: 480px) {
+    .hamburger {
+      display: inline-block; } }
 
 .headerThanks {
   height: 75px;
@@ -152,6 +218,9 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-110%); }
+  @media screen and (max-width: 480px) {
+    .heroContentSubheader {
+      font-size: 3rem; } }
 
 .heroContentSubheaderThanksLink {
   text-decoration: none;
@@ -265,7 +334,8 @@ body {
   background: #effbfe;
   color: #d0d0d0;
   position: relative;
-  padding: 115px 0 100px 0; }
+  padding: 115px 0 100px 0;
+  z-index: -1; }
 
 .projectsHeader {
   margin: 0 auto 40px auto;
