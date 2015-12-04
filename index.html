@@ -146,7 +146,7 @@
     <div class="contactLeft">
       <h1 class="contactHeader">Contact</h1>
       <p class="contactLinkWrap">
-        <a href="mailto:aemery14@gmail.com" class="contactLink"><i class="fa fa-envelope-o contactIcon"></i> aemery14@gmail.com</a>
+        <a href="mailto:aemery14@gmail.com" class="contactLink"><i class="fa fa-envelope-o contactIcon"></i> aaronemery.dev@gmail.com</a>
       </p>
       <p class="contactLinkWrap">
         <a href="tel:8438161202" class="contactLink"><i class="fa fa-phone contactIcon"></i> (843)816-1202</a>
@@ -156,11 +156,17 @@
       </p>
     </div>
     <div class="contactRight">
-      <form action="//formspree.io/aemery14@gmail.com"
+      <h1 class="contactFormHeader">Send me an email</h1>
+      <form action="//formspree.io/aaronemery.dev@gmail.com"
       method="POST">
-        <input type="text" name="name">
-        <input type="email" name="_replyto">
-        <input type="submit" value="Send">
+        <div class="formTopRow"><!--
+       --><input class="formElement formName" type="text" name="name" placeholder="Name"><!--
+       --><input class="formElement formEmail" type="email" name="_replyto" placeholder="Email"><!--
+     --></div>
+        <input class="formElement formCompany" type="text" name="company" placeholder="Company">
+        <textarea class="formElement formComments" type="text" name="comments" placeholder="Comments"></textarea>
+        <input class="formElement formSubmit" type="submit" value="Send">
+        <input type="hidden" name="_next" value="#contact" />
       </form>
     </div>
   </div>

@@ -38,7 +38,7 @@ body {
 .header {
   height: 75px;
   font-family: "Tall Films";
-  background: rgba(31, 44, 56, 0.9);
+  background-color: rgba(31, 44, 56, 0.9);
   width: 100%;
   position: fixed;
   top: 0;
@@ -310,17 +310,24 @@ body {
   color: #d0d0d0;
   padding: 115px 10% 0 10%;
   color: #ed7331; }
+  .contact::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .contactLeft {
-  width: 40%; }
+  width: 40%;
+  display: inline-block;
+  float: left; }
 
 .contactHeader {
   font-size: 2rem;
-  margin: 0;
+  margin: 0 0 15px 0;
   font-weight: lighter; }
 
 .contactLinkWrap {
-  display: block; }
+  display: block;
+  margin: 5px 0; }
 
 .contactIcon {
   width: 25px; }
@@ -331,3 +338,37 @@ body {
   font-size: 1.5rem;
   font-weight: lighter;
   line-height: 2.25rem; }
+
+.contactRight {
+  width: 58%;
+  display: inline-block;
+  float: right;
+  text-align: right; }
+
+.contactFormHeader {
+  font-weight: lighter;
+  font-size: 3rem;
+  margin: 0; }
+
+.formElement {
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 10px 0; }
+
+.formTopRow {
+  width: 100%; }
+
+.formName {
+  width: 45%;
+  margin-right: 10%; }
+
+.formEmail {
+  width: 45%; }
+
+.formCompany {
+  width: 100%; }
+
+.formComments {
+  width: 100%; }
