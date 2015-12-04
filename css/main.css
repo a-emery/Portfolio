@@ -256,6 +256,15 @@ body {
   color: #ed7331;
   padding: 115px 0 10px 0;
   margin-top: 100vh; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .about {
+      margin-top: 500px; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .about {
+      margin-top: 500px; } }
+  @media screen and (max-width: 480px) {
+    .about {
+      margin-top: 500px; } }
 
 .aboutHeader {
   margin: 0 auto 20px auto;
