@@ -6,7 +6,8 @@ body {
   padding: 0;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
-  min-width: 1360px; }
+  min-width: 1360px;
+  background: #1f2c38; }
 
 .heroContainer {
   position: fixed;
@@ -139,24 +140,23 @@ body {
   margin-top: 100vh; }
 
 .aboutHeader {
-  margin: 0 auto 40px auto;
+  margin: 0 auto 20px auto;
   text-align: center;
   font-weight: lighter;
-  font-size: 4rem;
-  text-transform: uppercase; }
+  font-size: 4rem; }
 
 .aboutMe {
   font-size: 1.5rem;
   font-weight: lighter;
   text-align: center;
+  padding: 0 5% 60px 5%;
   margin: 0 10%;
-  padding: 0 5% 80px 5%;
   border-bottom: 1px solid #e8ebee; }
 
 .aboutWhatIKnowContainer {
   width: 80%;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 60px 0 80px 0;
   border-bottom: 1px solid #e8ebee; }
   .aboutWhatIKnowContainer::after {
     clear: both;
@@ -172,9 +172,8 @@ body {
 
 .aboutWhatIKnowContainerLeftHeading {
   font-weight: lighter;
-  font-size: 2rem;
-  margin: 0;
-  text-transform: uppercase; }
+  font-size: 2.5rem;
+  margin: 0 0 20px 0; }
 
 .aboutWhatIKnowContainerRight {
   width: 49%;
@@ -233,23 +232,17 @@ body {
 
 .projects {
   min-height: 100vh;
-  background: url("../images/background3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #d0d0d0;
-  position: relative; }
-
-.projectsCover {
   background: #effbfe;
+  color: #d0d0d0;
+  position: relative;
   padding: 115px 0 100px 0; }
 
 .projectsHeader {
   margin: 0 auto 40px auto;
   text-align: center;
   font-size: 4rem;
-  font-weight: lighter; }
+  font-weight: lighter;
+  color: #ed7331; }
 
 .projectsList {
   margin: 0;
@@ -313,6 +306,29 @@ body {
   border-radius: 5px; }
 
 .contact {
-  height: 100vh;
+  min-height: calc(100vh - 115px);
   background: #222222;
-  color: #d0d0d0; }
+  color: #d0d0d0;
+  padding: 115px 10% 0 10%;
+  color: #ed7331; }
+
+.contactLeft {
+  width: 40%; }
+
+.contactHeader {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: lighter; }
+
+.contactLinkWrap {
+  display: block; }
+
+.contactIcon {
+  width: 25px; }
+
+.contactLink {
+  text-decoration: none;
+  color: #ed7331;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 2.25rem; }
