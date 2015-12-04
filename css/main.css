@@ -58,13 +58,16 @@ body {
   position: relative; }
   @media screen and (max-width: 925px) and (min-width: 769px) {
     .hero {
-      min-height: 300px; } }
+      height: 500px;
+      min-height: 0; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .hero {
-      min-height: 300px; } }
+      height: 500px;
+      min-height: 0; } }
   @media screen and (max-width: 480px) {
     .hero {
-      min-height: 300px; } }
+      height: 500px;
+      min-height: 0; } }
 
 .heroCover {
   position: absolute;
