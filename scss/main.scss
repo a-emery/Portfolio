@@ -164,10 +164,6 @@ body {
   }
 }
 
-.hamburgerContainer {
-
-}
-
 .hamburgerImageContainer {
   background: $body-color-overlay;
   display: none;
@@ -216,6 +212,17 @@ body {
   @include media($small-mobile) {
     display: inline-block;
   }
+}
+
+.hamburgerTopOfPage {
+  width: 30px;
+  float: right;
+  margin-right: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  display: none;
 }
 
 .hamburgerList {
