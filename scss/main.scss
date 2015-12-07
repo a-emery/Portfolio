@@ -66,6 +66,18 @@ body {
   left: 0;
   right: 0;
   z-index: -1;
+
+  @include media($large-tablet) {
+    margin-top: 50px;
+  }
+
+  @include media($mobile) {
+    margin-top: 50px;
+  }
+
+  @include media($small-mobile) {
+    margin-top: 50px;
+  }
 }
 
 .heroContainerThanks {
@@ -322,6 +334,18 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-110%);
+
+  @include media($large-tablet) {
+
+  }
+
+  @include media($mobile) {
+    font-size: 5rem;
+  }
+
+  @include media($small-mobile) {
+    font-size: 4rem;
+  }
 }
 
 .heroContentSubheader {
@@ -339,7 +363,7 @@ body {
   }
 
   @include media($mobile) {
-
+    font-size: 3.5rem;
   }
 
   @include media($small-mobile) {

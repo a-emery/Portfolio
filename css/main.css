@@ -41,6 +41,15 @@ body {
   left: 0;
   right: 0;
   z-index: -1; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .heroContainer {
+      margin-top: 50px; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .heroContainer {
+      margin-top: 50px; } }
+  @media screen and (max-width: 480px) {
+    .heroContainer {
+      margin-top: 50px; } }
 
 .heroContainerThanks {
   position: relative;
@@ -259,6 +268,12 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-110%); }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .heroContentHeader {
+      font-size: 5rem; } }
+  @media screen and (max-width: 480px) {
+    .heroContentHeader {
+      font-size: 4rem; } }
 
 .heroContentSubheader {
   color: #ed7331;
@@ -269,6 +284,9 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-110%); }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .heroContentSubheader {
+      font-size: 3.5rem; } }
   @media screen and (max-width: 480px) {
     .heroContentSubheader {
       font-size: 3rem; } }
