@@ -199,7 +199,8 @@ body {
   margin: 0;
   padding: 0;
   background: rgba(31, 44, 56, 0.9);
-  transition: all 0.1s ease; }
+  transition: all 0.1s ease;
+  z-index: 1; }
 
 .hamburgerListItem {
   padding: 5px 0 5px 20px;
@@ -500,18 +501,15 @@ body {
   @media screen and (max-width: 925px) and (min-width: 769px) {
     .projects {
       width: 100%;
-      text-align: center;
-      z-index: 1; } }
+      text-align: center; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .projects {
       width: 100%;
-      text-align: center;
-      z-index: 1; } }
+      text-align: center; } }
   @media screen and (max-width: 480px) {
     .projects {
       width: 100%;
-      text-align: center;
-      z-index: 1; } }
+      text-align: center; } }
 
 .projectsHeader {
   margin: 0 auto 40px auto;
