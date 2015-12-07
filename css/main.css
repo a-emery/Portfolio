@@ -285,6 +285,10 @@ body {
   height: calc(100vh - 75px);
   min-height: 200px; }
 
+.heroContentThanks {
+  height: 100vh;
+  min-height: 200px; }
+
 .heroContentHeader {
   color: #ed7331;
   margin: 0;
