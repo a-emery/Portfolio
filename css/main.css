@@ -330,6 +330,18 @@ body {
   padding: 0 5% 60px 5%;
   margin: 0 10%;
   border-bottom: 1px solid #e8ebee; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .aboutMe {
+      margin: 0 5%;
+      padding: 0 0 60px 0; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .aboutMe {
+      margin: 0 5%;
+      padding: 0 0 60px 0; } }
+  @media screen and (max-width: 480px) {
+    .aboutMe {
+      margin: 0 5%;
+      padding: 0 0 60px 0; } }
 
 .aboutSkillSetContainer {
   width: 80%;
@@ -340,6 +352,18 @@ body {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .aboutSkillSetContainer {
+      width: 100%;
+      text-align: center; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .aboutSkillSetContainer {
+      width: 100%;
+      text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .aboutSkillSetContainer {
+      width: 100%;
+      text-align: center; } }
 
 .aboutSkillSetContainerLeft {
   width: 49%;
@@ -350,14 +374,17 @@ body {
   @media screen and (max-width: 925px) and (min-width: 769px) {
     .aboutSkillSetContainerLeft {
       width: 100%;
-      text-align: center; } }
+      text-align: center;
+      padding-right: 5%; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .aboutSkillSetContainerLeft {
       width: 100%;
+      padding-right: 5%;
       text-align: center; } }
   @media screen and (max-width: 480px) {
     .aboutSkillSetContainerLeft {
       width: 100%;
+      padding-right: 5%;
       text-align: center; } }
 
 .aboutSkillSetContainerLeftHeading {
@@ -375,17 +402,20 @@ body {
     .aboutSkillSetContainerRight {
       width: 100%;
       text-align: center;
-      margin-top: 20px; } }
+      margin-top: 20px;
+      padding-left: 5%; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .aboutSkillSetContainerRight {
       width: 100%;
       text-align: center;
-      margin-top: 20px; } }
+      margin-top: 20px;
+      padding-left: 5%; } }
   @media screen and (max-width: 480px) {
     .aboutSkillSetContainerRight {
       width: 100%;
       text-align: center;
-      margin-top: 20px; } }
+      margin-top: 20px;
+      padding-left: 5%; } }
 
 .aboutSkillSetList {
   list-style: none;
@@ -477,13 +507,16 @@ body {
   display: inline-block; }
   @media screen and (max-width: 925px) and (min-width: 769px) {
     .projectsListItem {
-      width: 100%; } }
+      width: 100%;
+      padding: 0; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .projectsListItem {
-      width: 100%; } }
+      width: 100%;
+      padding: 0; } }
   @media screen and (max-width: 480px) {
     .projectsListItem {
-      width: 100%; } }
+      width: 100%;
+      padding: 0; } }
 
 .projectListItemImageContainer {
   width: 90%;
@@ -545,13 +578,13 @@ body {
     display: table; }
   @media screen and (max-width: 925px) and (min-width: 769px) {
     .contact {
-      padding-top: 75px; } }
+      padding: 75px 5% 50px 5%; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .contact {
-      padding-top: 75px; } }
+      padding: 75px 5% 50px 5%; } }
   @media screen and (max-width: 480px) {
     .contact {
-      padding-top: 75px; } }
+      padding: 75px 5% 50px 5%; } }
 
 .contactLeft {
   width: 40%;
@@ -601,6 +634,15 @@ body {
   .contactLink:hover {
     background: #ed7331;
     color: #d0d0d0; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .contactLink {
+      font-size: 1.3rem; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .contactLink {
+      font-size: 1.15rem; } }
+  @media screen and (max-width: 480px) {
+    .contactLink {
+      font-size: 1.15rem; } }
 
 .contactRight {
   width: 58%;
@@ -659,7 +701,8 @@ body {
   width: 100%; }
 
 .formComments {
-  width: 100%; }
+  width: 100%;
+  resize: none; }
 
 .formSubmit {
   width: 45%;
@@ -673,6 +716,15 @@ body {
 .footer {
   background: #222222;
   padding: 0 10%; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .footer {
+      padding: 0 5%; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .footer {
+      padding: 0 5%; } }
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding: 0 5%; } }
 
 .footerText {
   border-top: 1px solid #141414;
