@@ -675,6 +675,42 @@ body {
   &:hover {
     opacity: .97;
   }
+
+  @include media($large-tablet) {
+    position: relative;
+    opacity: 1;
+    margin-bottom: 20px;
+    background: none;
+    color: $contrast-color;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @include media($mobile) {
+    position: relative;
+    opacity: 1;
+    margin-bottom: 20px;
+    background: none;
+    color: $contrast-color;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @include media($small-mobile) {
+    position: relative;
+    opacity: 1;
+    margin-bottom: 20px;
+    background: none;
+    color: $contrast-color;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .projectListItemDescriptionName {
@@ -682,12 +718,50 @@ body {
   font-weight: lighter;
   color: $header-text;
   margin: 5px auto 10px auto;
+
+  @include media($small-desktop) {
+    font-size: 2rem;
+    margin: 2px auto 5px auto;
+  }
+
+  @include media($large-tablet) {
+    font-size: 2.5rem;
+    color: $contrast-color;
+  }
+
+  @include media($mobile) {
+    font-size: 2.2rem;
+    color: $contrast-color;
+  }
+
+  @include media($small-mobile) {
+    font-size: 2rem;
+    color: $contrast-color;
+  }
+
 }
 
 .projectListItemDescriptionText {
   font-size: 1.5rem;
   letter-spacing: 1.1px;
-  line-height: 3rem;
+  // line-height: 3rem;
+
+  @include media($small-desktop) {
+    font-size: 1.2rem;
+    margin: 0 0 20px 0;
+  }
+
+  @include media($large-tablet) {
+    font-size: 1.3rem;
+  }
+
+  @include media($mobile) {
+    font-size: 1.2rem;
+  }
+
+  @include media($small-mobile) {
+    font-size: 1rem;
+  }
 }
 
 .projectListItemDescriptionLink {
@@ -703,6 +777,26 @@ body {
   &:hover {
     background: $header-text;
     color: $contrast-color;
+  }
+
+  @include media($small-desktop) {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  @include media($large-tablet) {
+    color: $contrast-color;
+    font-size: 1.3rem;
+  }
+
+  @include media($mobile) {
+    color: $contrast-color;
+    font-size: 1.2rem;
+  }
+
+  @include media($small-mobile) {
+    color: $contrast-color;
+    font-size: 1rem;
   }
 }
 

@@ -537,17 +537,72 @@ body {
   transition: opacity 0.75s ease; }
   .projectListItemDescription:hover {
     opacity: .97; }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .projectListItemDescription {
+      position: relative;
+      opacity: 1;
+      margin-bottom: 20px;
+      background: none;
+      color: #ed7331; }
+      .projectListItemDescription:hover {
+        opacity: 1; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .projectListItemDescription {
+      position: relative;
+      opacity: 1;
+      margin-bottom: 20px;
+      background: none;
+      color: #ed7331; }
+      .projectListItemDescription:hover {
+        opacity: 1; } }
+  @media screen and (max-width: 480px) {
+    .projectListItemDescription {
+      position: relative;
+      opacity: 1;
+      margin-bottom: 20px;
+      background: none;
+      color: #ed7331; }
+      .projectListItemDescription:hover {
+        opacity: 1; } }
 
 .projectListItemDescriptionName {
   font-size: 3rem;
   font-weight: lighter;
   color: #dddddd;
   margin: 5px auto 10px auto; }
+  @media screen and (max-width: 1150px) and (min-width: 926px) {
+    .projectListItemDescriptionName {
+      font-size: 2rem;
+      margin: 2px auto 5px auto; } }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .projectListItemDescriptionName {
+      font-size: 2.5rem;
+      color: #ed7331; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .projectListItemDescriptionName {
+      font-size: 2.2rem;
+      color: #ed7331; } }
+  @media screen and (max-width: 480px) {
+    .projectListItemDescriptionName {
+      font-size: 2rem;
+      color: #ed7331; } }
 
 .projectListItemDescriptionText {
   font-size: 1.5rem;
-  letter-spacing: 1.1px;
-  line-height: 3rem; }
+  letter-spacing: 1.1px; }
+  @media screen and (max-width: 1150px) and (min-width: 926px) {
+    .projectListItemDescriptionText {
+      font-size: 1.2rem;
+      margin: 0 0 20px 0; } }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .projectListItemDescriptionText {
+      font-size: 1.3rem; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .projectListItemDescriptionText {
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 480px) {
+    .projectListItemDescriptionText {
+      font-size: 1rem; } }
 
 .projectListItemDescriptionLink {
   border: 1px solid #dddddd;
@@ -561,6 +616,22 @@ body {
   .projectListItemDescriptionLink:hover {
     background: #dddddd;
     color: #ed7331; }
+  @media screen and (max-width: 1150px) and (min-width: 926px) {
+    .projectListItemDescriptionLink {
+      font-size: 1.2rem;
+      margin: 0; } }
+  @media screen and (max-width: 925px) and (min-width: 769px) {
+    .projectListItemDescriptionLink {
+      color: #ed7331;
+      font-size: 1.3rem; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .projectListItemDescriptionLink {
+      color: #ed7331;
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 480px) {
+    .projectListItemDescriptionLink {
+      color: #ed7331;
+      font-size: 1rem; } }
 
 .projectListItemImage {
   width: 100%;
