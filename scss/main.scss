@@ -57,6 +57,26 @@ body {
   }
 }
 
+.lightContainerBackground {
+  width: 100%;
+  background: $main-background-color;
+}
+
+.lightContainerContainer {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.darkContainerBackground {
+  width: 100%;
+  background: $dark-background;
+}
+
+.darkContainerContainer {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
 // HOME //
 
 .heroContainer {
@@ -89,7 +109,7 @@ body {
 
 .hero {
   font-family: "Tall Films";
-  background: url('../images/background2.jpg');
+  background: url('../images/background.jpg');
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
