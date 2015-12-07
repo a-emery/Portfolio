@@ -499,19 +499,22 @@ body {
   background: #effbfe;
   color: #d0d0d0;
   position: relative;
-  padding: 75px 0 75px 0; }
+  padding: 115px 0 75px 0; }
   @media screen and (max-width: 925px) and (min-width: 769px) {
     .projects {
       width: 100%;
-      text-align: center; } }
+      text-align: center;
+      padding-top: 75px; } }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .projects {
       width: 100%;
-      text-align: center; } }
+      text-align: center;
+      padding-top: 75px; } }
   @media screen and (max-width: 480px) {
     .projects {
       width: 100%;
-      text-align: center; } }
+      text-align: center;
+      padding-top: 75px; } }
 
 .projectsHeader {
   margin: 0 auto 40px auto;
