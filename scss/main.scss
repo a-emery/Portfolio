@@ -86,15 +86,15 @@ body {
   position: relative;
 
   @include media($large-tablet) {
-    height: 600px;
+    height: 1000px;
   }
 
   @include media($mobile) {
-    height: 600px;
+    height: 1000px;
   }
 
   @include media($small-mobile) {
-    height: 600px;
+    height: 1000px;
   }
 }
 
@@ -188,7 +188,7 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  margin: 0 0 0 20px;
+  margin-left: 20px;
   padding: 0;
   display: none;
   z-index: 10;
@@ -209,15 +209,13 @@ body {
 .hamburgerList {
   position: fixed;
   top: 50px;
-  left: 0;
-  right: 0;
+  left: -2000px;
+  right: 2000px;
   list-style: none;
   margin: 0;
   padding: 0;
-  z-index: -3;
-  opacity: 0;
   background: $body-color-overlay;
-  transition: all .25s ease;
+  transition: all .1s ease;
 }
 
 .hamburgerListItem {
@@ -312,6 +310,7 @@ body {
 
 .heroContent {
   height: calc(100vh - 75px);
+  min-height: 200px;
 }
 
 .heroContentHeader {
@@ -371,15 +370,15 @@ body {
   margin-top: 100vh;
 
   @include media($large-tablet) {
-    margin-top: 500px;
+    padding-top: 75px;
   }
 
   @include media($mobile) {
-    margin-top: 500px;
+    padding-top: 75px;
   }
 
   @include media($small-mobile) {
-    margin-top: 500px;
+    padding-top: 75px;
   }
 }
 
@@ -657,18 +656,54 @@ body {
   padding: 115px 10% 50px 10%;
   color: $contrast-color;
   @include clearfix;
+
+  @include media($large-tablet) {
+    padding-top: 75px;
+  }
+
+  @include media($mobile) {
+    padding-top: 75px;
+  }
+
+  @include media($small-mobile) {
+    padding-top: 75px;
+  }
 }
 
 .contactLeft {
   width: 40%;
   display: inline-block;
   float: left;
+
+  @include media($large-tablet) {
+    width: 100%;
+  }
+
+  @include media($mobile) {
+    width: 100%;
+  }
+
+  @include media($small-mobile) {
+    width: 100%;
+  }
 }
 
 .contactHeader {
   font-size: 2rem;
   margin: 0 0 15px 0;
   font-weight: lighter;
+
+  @include media($large-tablet) {
+    font-size: 3rem;
+  }
+
+  @include media($mobile) {
+    font-size: 3rem;
+  }
+
+  @include media($small-mobile) {
+    font-size: 3rem;
+  }
 }
 
 .contactLinkWrap {
@@ -703,12 +738,42 @@ body {
   display: inline-block;
   float: right;
   text-align: right;
+
+  @include media($large-tablet) {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+  }
+
+  @include media($mobile) {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+  }
+
+  @include media($small-mobile) {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .contactFormHeader {
   font-weight: lighter;
   font-size: 3rem;
   margin: 0;
+
+  @include media($large-tablet) {
+    font-size: 2.5rem;
+  }
+
+  @include media($mobile) {
+    font-size: 2.5rem;
+  }
+
+  @include media($small-mobile) {
+    font-size: 2.5rem;
+  }
 }
 
 .formElement {
