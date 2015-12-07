@@ -191,6 +191,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 3;
 
   @include media($large-tablet) {
     display: inline-block;
@@ -623,21 +624,21 @@ body {
     width: 100%;
     text-align: center;
     // margin-top: 15px;
-    z-index: -1;
+    z-index: 1;
   }
 
   @include media($mobile) {
     width: 100%;
     text-align: center;
     // margin-top: 20px;
-    z-index: -1;
+    z-index: 1;
   }
 
   @include media($small-mobile) {
     width: 100%;
     text-align: center;
     // margin-top: 20px;
-    z-index: -1;
+    z-index: 1;
   }
 
 }
