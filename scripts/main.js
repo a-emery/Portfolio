@@ -61,3 +61,14 @@ $(window).scroll(function(){
           $('.headerArrowContainer').css("display", "none");
     }
 });
+
+$(document).ready(function() {
+  var shouldBeVisible = $(window).scrollTop()>($('.heroContent').css('height').slice(0, -2) - 1);
+  if (shouldBeVisible && !isVisible) {
+       isVisible = true;
+       $('.headerArrowContainer').css("display", "inline-block");
+  } else if (isVisible && !shouldBeVisible) {
+       isVisible = false;
+       $('.headerArrowContainer').css("display", "none");
+ }
+});
