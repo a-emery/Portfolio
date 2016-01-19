@@ -214,6 +214,8 @@ body {
   height: 20px;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-left: 20px;
   padding: 0;
@@ -239,6 +241,8 @@ body {
   margin-right: 20px;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 0;
   display: none;
@@ -286,6 +290,8 @@ body {
   font-size: 2.5rem;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -296,6 +302,8 @@ body {
   padding: 0;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -330,6 +338,8 @@ body {
 .headerArrowContainer {
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   border-radius: 100%;
   @include clearfix;
@@ -365,6 +375,8 @@ body {
   text-align: center;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-110%);
+  -ms-transform: translateY(-110%);
   transform: translateY(-110%);
 
   @include media($large-tablet) {
@@ -388,6 +400,8 @@ body {
   text-align: center;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-110%);
+  -ms-transform: translateY(-110%);
   transform: translateY(-110%);
 
   @include media($large-tablet) {
