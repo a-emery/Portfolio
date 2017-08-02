@@ -852,9 +852,8 @@ body {
 // CONTACT //
 
 .contact {
-  min-height: calc(100vh - 115px);
+  min-height: calc(100vh - 50px);
   background: $dark-background;
-  color: $light-text-color;
   padding: 115px 10% 50px 10%;
   color: $contrast-color;
   @include clearfix;

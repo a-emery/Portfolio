@@ -1,9 +1,7 @@
 html {
   box-sizing: border-box; }
 
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   box-sizing: inherit; }
 
 /*
@@ -163,6 +161,8 @@ body {
   height: 20px;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-left: 20px;
   padding: 0;
@@ -184,6 +184,8 @@ body {
   margin-right: 20px;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 0;
   display: none; }
@@ -197,7 +199,7 @@ body {
   margin: 0;
   padding: 0;
   background: rgba(31, 44, 56, 0.9);
-  transition: all 0.1s ease;
+  transition: all .1s ease;
   z-index: 1; }
 
 .hamburgerListItem {
@@ -226,6 +228,8 @@ body {
   font-size: 2.5rem;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .headerList {
@@ -235,6 +239,8 @@ body {
   padding: 0;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .headerListItem {
@@ -264,6 +270,8 @@ body {
 .headerArrowContainer {
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   border-radius: 100%;
   display: none;
@@ -297,6 +305,8 @@ body {
   text-align: center;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-110%);
+  -ms-transform: translateY(-110%);
   transform: translateY(-110%); }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .heroContentHeader {
@@ -313,6 +323,8 @@ body {
   text-align: center;
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-110%);
+  -ms-transform: translateY(-110%);
   transform: translateY(-110%); }
   @media screen and (max-width: 768px) and (min-width: 481px) {
     .heroContentSubheader {
@@ -325,7 +337,7 @@ body {
   text-decoration: none;
   color: #ed7331;
   padding: 5px 30px;
-  transition: all 0.25s ease;
+  transition: all .25s ease;
   border-radius: 4px; }
   .heroContentSubheaderThanksLink:hover {
     background: #ed7331;
@@ -564,7 +576,7 @@ body {
   right: 0;
   background: #ed7331;
   opacity: 0;
-  transition: opacity 0.75s ease; }
+  transition: opacity .75s ease; }
   .projectListItemDescription:hover {
     opacity: .97; }
   @media screen and (max-width: 925px) and (min-width: 769px) {
@@ -668,9 +680,8 @@ body {
   border-radius: 5px; }
 
 .contact {
-  min-height: calc(100vh - 115px);
+  min-height: calc(100vh - 50px);
   background: #222222;
-  color: #d0d0d0;
   padding: 115px 10% 50px 10%;
   color: #ed7331; }
   .contact::after {
@@ -731,7 +742,7 @@ body {
   line-height: 2.25rem;
   padding: 3px 18px;
   border-radius: 3px;
-  transition: all 0.25s ease; }
+  transition: all .25s ease; }
   .contactLink:hover {
     background: #ed7331;
     color: #d0d0d0; }
@@ -806,7 +817,7 @@ body {
   width: 45%;
   color: #d0d0d0;
   background: #ed7331;
-  transition: all 0.25s ease; }
+  transition: all .25s ease; }
   .formSubmit:hover {
     background: white;
     color: #ed7331; }
