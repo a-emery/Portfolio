@@ -1,8 +1,44 @@
 // Code to make top button appear at certain height //
 
+var aboutVisible, skillsVisibleLeft, skillsVisibleRight = false;
 
+
+function showAbout() {
+	if ( $(window).scrollTop() > $('.aboutMe').offset().top - $(window).height() ) {
+		$('.aboutMe').removeClass('aboutMeHidden');
+		aboutVisible = true;
+	}
+}
+
+function showSkillsLeft() {
+	if ( $(window).scrollTop() > $('.aboutSkillSetContainerLeft').offset().top - $(window).height() ) {
+		$('.aboutSkillSetContainerLeft .skillSlider').removeClass('skillHidden');
+		skillsVisibleLeft = true;
+	}
+}
+
+function showSkillsRight() {
+	if ( $(window).scrollTop() > $('.aboutSkillSetContainerRight').offset().top - $(window).height() ) {
+		$('.aboutSkillSetContainerRight .skillSlider').removeClass('skillHidden');
+		skillsVisibleRight = true;
+	}
+}
+
+function checkAnimations() {
+	if (!aboutVisible) {
+		showAbout();
+	}
+	if (!skillsVisibleLeft) {
+		showSkillsLeft();
+	}
+	if (!skillsVisibleRight) {
+		showSkillsRight();
+	}
+}
 
 $(document).ready(function() {
+	checkAnimations();
+
 	$('#js_aboutLink').click(function(){
 		$.scrollTo($('#about') , 800);
 		return false;
@@ -52,7 +88,7 @@ $(document).ready(function() {
 			$('.headerArrowHover').css("display", "none");
 		}
 	);
-	let isVisible;
+	var isVisible;
 	var shouldBeVisible = $(window).scrollTop()>($('.heroContent').css('height').slice(0, -2) - 1);
 	if (shouldBeVisible && !isVisible) {
 		isVisible = true;
@@ -63,7 +99,8 @@ $(document).ready(function() {
 	}
 
 	$(window).scroll(function(){
-		const shouldBeVisible = $(window).scrollTop()>($('.heroContent').css('height').slice(0, -2) - 1);
+		checkAnimations();
+		var shouldBeVisible = $(window).scrollTop()>($('.heroContent').css('height').slice(0, -2) - 1);
 		if (shouldBeVisible && !isVisible) {
 			isVisible = true;
 			$('.headerArrowContainer').css("display", "inline-block");
@@ -73,7 +110,7 @@ $(document).ready(function() {
 		}
 	});
 
-	const date = new Date();
-	const year = date.getFullYear();
+	var date = new Date();
+	var year = date.getFullYear();
 	$('.copyright-year').html(year);
 });
