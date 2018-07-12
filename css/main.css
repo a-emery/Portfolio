@@ -821,6 +821,8 @@ body {
   resize: none; }
 
 .formSubmit {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
   width: 45%;
   color: #d0d0d0;
   background: #ed7331;
