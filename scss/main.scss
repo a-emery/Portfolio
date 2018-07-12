@@ -1,5 +1,5 @@
-@import '../node_modules/bourbon/app/assets/stylesheets/bourbon';
-@import '../node_modules/bourbon-neat/app/assets/stylesheets/neat';
+@import '../scripts/bourbon/app/assets/stylesheets/bourbon';
+@import '../scripts/bourbon-neat/app/assets/stylesheets/neat';
 
 // Colors //
 
@@ -350,11 +350,13 @@ body {
 .headerArrow {
   height: 50px;
   display: block;
+  cursor: pointer;
 }
 
 .headerArrowHover {
   height: 50px;
   display: none;
+  cursor: pointer;
 }
 
 .heroContent {
