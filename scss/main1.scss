@@ -1031,6 +1031,8 @@ body {
 }
 
 .formSubmit {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
 	width: 45%;
 	color: $light-text-color;
 	background: $contrast-color;
