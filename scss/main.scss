@@ -1,5 +1,5 @@
-@import '../node_modules/bourbon/app/assets/stylesheets/bourbon';
-@import '../node_modules/bourbon-neat/app/assets/stylesheets/neat';
+@import '../scripts/bourbon/app/assets/stylesheets/bourbon';
+@import '../scripts/bourbon-neat/app/assets/stylesheets/neat';
 
 // Colors //
 
@@ -31,1025 +31,1042 @@ $small-mobile: new-breakpoint(max-width 480px 4);
 
 
 @font-face {
-  font-family: "Tall Films";
-  src: url(../Tall_Films_Expanded.ttf);
+	font-family: "Tall Films";
+	src: url(../Tall_Films_Expanded.ttf);
 }
 
 body {
-  padding: 0;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
-  // min-width: 1360px;
-  background: $body-color;
-  position: relative;
-  z-index: -2;
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	// min-width: 1360px;
+	background: $body-color;
+	position: relative;
+	z-index: -2;
 
-  @include media($large-tablet) {
-    min-width: 0;
-  }
+	@include media($large-tablet) {
+		min-width: 0;
+	}
 
-  @include media($mobile) {
-    min-width: 0;
-  }
+	@include media($mobile) {
+		min-width: 0;
+	}
 
-  @include media($small-mobile) {
-    min-width: 0;
-  }
+	@include media($small-mobile) {
+		min-width: 0;
+	}
 }
 
 .lightContainerBackground {
-  width: 100%;
-  background: $main-background-color;
+	width: 100%;
+	background: $main-background-color;
 }
 
 .lightContainerContainer {
-  margin: 0 auto;
-  max-width: 1500px;
+	margin: 0 auto;
+	max-width: 1500px;
 }
 
 .darkContainerBackground {
-  width: 100%;
-  background: $dark-background;
+	width: 100%;
+	background: $dark-background;
 }
 
 .darkContainerContainer {
-  margin: 0 auto;
-  max-width: 1500px;
+	margin: 0 auto;
+	max-width: 1500px;
 }
 
 // HOME //
 
 .heroContainer {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
 
-  @include media($large-tablet) {
-    margin-top: 50px;
-  }
+	@include media($large-tablet) {
+		margin-top: 50px;
+	}
 
-  @include media($mobile) {
-    margin-top: 50px;
-  }
+	@include media($mobile) {
+		margin-top: 50px;
+	}
 
-  @include media($small-mobile) {
-    margin-top: 50px;
-  }
+	@include media($small-mobile) {
+		margin-top: 50px;
+	}
 }
 
 .heroContainerThanks {
-  position: relative;
-  height: 100vh;
+	position: relative;
+	height: 100vh;
 }
 
 .hero {
-  font-family: "Tall Films";
-  background: url('../images/background.jpg');
-  background-position: top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
+	font-family: "Tall Films";
+	background: url('../images/background.jpg');
+	background-position: top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
 
-  @include media($large-tablet) {
-    height: 1000px;
-  }
+	@include media($large-tablet) {
+		height: 1000px;
+	}
 
-  @include media($mobile) {
-    height: 1000px;
-  }
+	@include media($mobile) {
+		height: 1000px;
+	}
 
-  @include media($small-mobile) {
-    height: 1000px;
-  }
+	@include media($small-mobile) {
+		height: 1000px;
+	}
 }
 
 .heroCover {
-  position: absolute;
-  top: 75px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: $body-color-overlay;
+	position: absolute;
+	top: 75px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: $body-color-overlay;
 
-  @include media($large-tablet) {
-    top: 0;
-  }
+	@include media($large-tablet) {
+		top: 0;
+	}
 
-  @include media($mobile) {
-    top: 0;
-  }
+	@include media($mobile) {
+		top: 0;
+	}
 
-  @include media($small-mobile) {
-    top: 0;
-  }
+	@include media($small-mobile) {
+		top: 0;
+	}
 }
 
 .heroCoverThanks {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: $body-color-overlay;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: $body-color-overlay;
 }
 
 .header {
-  height: 75px;
-  font-family: "Tall Films";
-  background-color: $body-color-overlay;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 10%;
-  z-index: 1;
+	height: 75px;
+	font-family: "Tall Films";
+	background-color: $body-color-overlay;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 10%;
+	z-index: 1;
 
-  @include media($large-tablet) {
-    display: none;
-  }
+	@include media($large-tablet) {
+		display: none;
+	}
 
-  @include media($mobile) {
-    display: none;
-  }
+	@include media($mobile) {
+		display: none;
+	}
 
-  @include media($small-mobile) {
-    display: none;
-  }
+	@include media($small-mobile) {
+		display: none;
+	}
 }
 
 .hamburgerImageContainer {
-  background: $body-color-overlay;
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
+	background: $body-color-overlay;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
 
-  @include media($large-tablet) {
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-  }
+	@include media($large-tablet) {
+		display: inline-block;
+		width: 100%;
+		height: 50px;
+	}
 
-  @include media($mobile) {
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-  }
+	@include media($mobile) {
+		display: inline-block;
+		width: 100%;
+		height: 50px;
+	}
 
-  @include media($small-mobile) {
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-  }
+	@include media($small-mobile) {
+		display: inline-block;
+		width: 100%;
+		height: 50px;
+	}
 }
 
 .hamburger {
-  height: 20px;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin-left: 20px;
-  padding: 0;
-  display: none;
-  z-index: 10;
+	height: 20px;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	margin-left: 20px;
+	padding: 0;
+	display: none;
+	z-index: 10;
 
-  @include media($large-tablet) {
-    display: inline-block;
-  }
+	@include media($large-tablet) {
+		display: inline-block;
+	}
 
-  @include media($mobile) {
-    display: inline-block;
-  }
+	@include media($mobile) {
+		display: inline-block;
+	}
 
-  @include media($small-mobile) {
-    display: inline-block;
-  }
+	@include media($small-mobile) {
+		display: inline-block;
+	}
 }
 
 .hamburgerTopOfPage {
-  width: 30px;
-  float: right;
-  margin-right: 20px;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 0;
-  display: none;
+	width: 30px;
+	float: right;
+	margin-right: 20px;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	opacity: 0;
+	display: none;
 }
 
 .hamburgerList {
-  position: fixed;
-  top: 50px;
-  left: -2000px;
-  right: 2000px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: $body-color-overlay;
-  transition: all .1s ease;
-  z-index: 1;
+	position: fixed;
+	top: 50px;
+	left: -2000px;
+	right: 2000px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: $body-color-overlay;
+	transition: all .1s ease;
+	z-index: 1;
 }
 
 .hamburgerListItem {
-  padding: 5px 0 5px 20px;
-  border-top: 1px solid rgba(21, 34, 46, 1);
-  margin: 0;
+	padding: 5px 0 5px 20px;
+	border-top: 1px solid rgba(21, 34, 46, 1);
+	margin: 0;
 }
 
 .hamburgerListItemLink {
-  color: $light-text-color;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: lighter;
+	color: $light-text-color;
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: lighter;
 }
 
 .headerThanks {
-  height: 75px;
-  font-family: "Tall Films";
-  width: 100%;
-  position: relative;
-  z-index: 1;
+	height: 75px;
+	font-family: "Tall Films";
+	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 
 .headerName {
-  margin: 0;
-  color: $header-text;
-  float: left;
-  font-weight: bold;
-  font-size: 2.5rem;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+	margin: 0;
+	color: $header-text;
+	float: left;
+	font-weight: bold;
+	font-size: 2.5rem;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .headerList {
-  float: right;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .headerListItem {
-  display: inline-block;
-  margin: 0 25px;
-  font-size: 2rem;
+	display: inline-block;
+	margin: 0 25px;
+	font-size: 2rem;
 }
 
 .headerListItemLink {
-  color: $header-text;
-  text-decoration: none;
-  position: relative;
+	color: $header-text;
+	text-decoration: none;
+	position: relative;
 }
 
 .headerListItemLink:after {
-  content: '';
-  display: block;
-  border-bottom: 1px solid $contrast-color;
-  width: 0;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transition: .3s ease;
+	content: '';
+	display: block;
+	border-bottom: 1px solid $contrast-color;
+	width: 0;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transition: .3s ease;
 }
 
 .headerListItemLink:hover:after {
-  left: -10%;
-  width: 120%;
+	left: -10%;
+	width: 120%;
 }
 
 .headerArrowContainer {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  border-radius: 100%;
-  @include clearfix;
-  display: none;
-  margin-left: 5%;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border-radius: 100%;
+	@include clearfix;
+	display: none;
+	margin-left: 5%;
 }
 
 .headerArrow {
-  height: 50px;
-  display: block;
+	height: 50px;
+	display: block;
+	cursor: pointer;
 }
 
 .headerArrowHover {
-  height: 50px;
-  display: none;
+	height: 50px;
+	display: none;
+	cursor: pointer;
 }
 
 .heroContent {
-  height: calc(100vh - 75px);
-  min-height: 200px;
+	height: calc(100vh - 75px);
+	min-height: 200px;
 }
 
 .heroContentThanks {
-  height: 100vh;
-  min-height: 200px;
+	height: 100vh;
+	min-height: 200px;
 }
 
 .heroContentHeader {
-  color: $contrast-color;
-  margin: 0;
-  font-weight: lighter;
-  font-size: 6rem;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-110%);
-  -ms-transform: translateY(-110%);
-  transform: translateY(-110%);
+	color: $contrast-color;
+	margin: 0;
+	font-weight: lighter;
+	font-size: 6rem;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-110%);
+	-ms-transform: translateY(-110%);
+	transform: translateY(-110%);
 
-  @include media($large-tablet) {
+	@include media($large-tablet) {
 
-  }
+	}
 
-  @include media($mobile) {
-    font-size: 5rem;
-  }
+	@include media($mobile) {
+		font-size: 5rem;
+	}
 
-  @include media($small-mobile) {
-    font-size: 4rem;
-  }
+	@include media($small-mobile) {
+		font-size: 4rem;
+	}
 }
 
 .heroContentSubheader {
-  color: $contrast-color;
-  margin: 0 0 20px 0;
-  font-weight: normal;
-  font-size: 4rem;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-110%);
-  -ms-transform: translateY(-110%);
-  transform: translateY(-110%);
+	color: $contrast-color;
+	margin: 0 0 20px 0;
+	font-weight: normal;
+	font-size: 4rem;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-110%);
+	-ms-transform: translateY(-110%);
+	transform: translateY(-110%);
 
-  @include media($large-tablet) {
+	@include media($large-tablet) {
 
-  }
+	}
 
-  @include media($mobile) {
-    font-size: 3.5rem;
-  }
+	@include media($mobile) {
+		font-size: 3.5rem;
+	}
 
-  @include media($small-mobile) {
-    font-size: 3rem;
-  }
+	@include media($small-mobile) {
+		font-size: 3rem;
+	}
 }
 
 .heroContentSubheaderThanksLink {
-  text-decoration: none;
-  color: $contrast-color;
-  padding: 5px 30px;
-  transition: all .25s ease;
-  border-radius: 4px;
+	text-decoration: none;
+	color: $contrast-color;
+	padding: 5px 30px;
+	transition: all .25s ease;
+	border-radius: 4px;
 
-  &:hover {
-    background: $contrast-color;
-    color: $light-text-color;
-  }
+	&:hover {
+		background: $contrast-color;
+		color: $light-text-color;
+	}
 }
 
 // ABOUT //
 
 .about {
-  min-height: calc(100vh - 140px);
-  background: $main-background-color;
-  color: $contrast-color;
-  padding: 115px 0 10px 0;
-  margin-top: 100vh;
+	min-height: calc(100vh - 140px);
+	background: $main-background-color;
+	color: $contrast-color;
+	padding: 115px 0 10px 0;
+	margin-top: 100vh;
 
-  @include media($large-tablet) {
-    padding-top: 75px;
-  }
+	@include media($large-tablet) {
+		padding-top: 75px;
+	}
 
-  @include media($mobile) {
-    padding-top: 75px;
-  }
+	@include media($mobile) {
+		padding-top: 75px;
+	}
 
-  @include media($small-mobile) {
-    padding-top: 75px;
-  }
+	@include media($small-mobile) {
+		padding-top: 75px;
+	}
 }
 
 .aboutHeader {
-  margin: 0 auto 20px auto;
-  text-align: center;
-  font-weight: lighter;
-  font-size: 4rem;
+	margin: 0 auto 20px auto;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 4rem;
 }
 
 .aboutMe {
-  font-size: 1.5rem;
-  font-weight: lighter;
-  text-align: center;
-  padding: 0 5% 60px 5%;
-  margin: 0 10%;
-  border-bottom: 1px solid  $border-color;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	text-align: center;
+	padding: 0 5% 60px 5%;
+	margin: 0 10%;
+	border-bottom: 1px solid  $border-color;
+	transition: opacity 1s;
 
-  @include media($large-tablet) {
-    margin: 0 5%;
-    padding: 0 0 60px 0;
-  }
+	&.aboutMeHidden {
+		opacity: 0;
+	}
 
-  @include media($mobile) {
-    margin: 0 5%;
-    padding: 0 0 60px 0;
-  }
+	@include media($large-tablet) {
+		margin: 0 5%;
+		padding: 0 0 60px 0;
+	}
 
-  @include media($small-mobile) {
-    margin: 0 5%;
-    padding: 0 0 60px 0;
-  }
+	@include media($mobile) {
+		margin: 0 5%;
+		padding: 0 0 60px 0;
+	}
+
+	@include media($small-mobile) {
+		margin: 0 5%;
+		padding: 0 0 60px 0;
+	}
 }
 
 .aboutSkillSetContainer {
-  width: 80%;
-  margin: 0 auto;
-  padding: 60px 0 80px 0;
-  @include clearfix;
-  border-bottom: 1px solid $border-color;
+	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+	padding: 60px 0 80px 0;
+	@include clearfix;
+	border-bottom: 1px solid $border-color;
 
-  @include media($large-tablet) {
-    width: 100%;
-    text-align: center;
-  }
+	@include media($large-tablet) {
+		width: 100%;
+		text-align: center;
+	}
 
-  @include media($mobile) {
-    width: 100%;
-    text-align: center;
-  }
+	@include media($mobile) {
+		width: 100%;
+		text-align: center;
+	}
 
-  @include media($small-mobile) {
-    width: 100%;
-    text-align: center;
-  }
+	@include media($small-mobile) {
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .aboutSkillSetContainerLeft {
-  width: 49%;
-  display: inline-block;
-  float: left;
-  box-sizing: border-box;
-  padding-left: 5%;
+	width: 49%;
+	display: inline-block;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 5%;
 
-  @include media($large-tablet) {
-    width: 100%;
-    text-align: center;
-    padding-right: 5%;
-  }
+	.skillSlider {
+		width: 100%;
+		transition: all 1s;
 
-  @include media($mobile) {
-    width: 100%;
-    padding-right: 5%;
-    text-align: center;
-  }
+		&.skillHidden {
+			opacity: 0;
+			margin-left: -100%;
+		}
+	}
 
-  @include media($small-mobile) {
-    width: 100%;
-    padding-right: 5%;
-    text-align: center;
-  }
+	@include media($large-tablet) {
+		width: 100%;
+		text-align: center;
+		padding-right: 5%;
+	}
+
+	@include media($mobile) {
+		width: 100%;
+		padding-right: 5%;
+		text-align: center;
+	}
+
+	@include media($small-mobile) {
+		width: 100%;
+		padding-right: 5%;
+		text-align: center;
+	}
 }
 
 .aboutSkillSetContainerLeftHeading {
-  font-weight: lighter;
-  font-size: 2.5rem;
-  margin: 0 0 20px 0;
+	font-weight: lighter;
+	font-size: 2.5rem;
+	margin: 0 0 20px 0;
 }
 
 .aboutSkillSetContainerRight {
-  width: 49%;
-  display: inline-block;
-  float: right;
-  box-sizing: border-box;
-  padding-right: 5%;
+	width: 49%;
+	display: inline-block;
+	float: right;
+	box-sizing: border-box;
+	padding-right: 5%;
 
-  @include media($large-tablet) {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    padding-left: 5%;
-  }
+	.skillSlider {
+		width: 100%;
+		transition: all 1s;
 
-  @include media($mobile) {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    padding-left: 5%;
-  }
+		&.skillHidden {
+			opacity: 0;
+			margin-left: 100%;
+		}
+	}
 
-  @include media($small-mobile) {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    padding-left: 5%;
-  }
+	.familiarTechHidden {
+		margin-right: 1000px;
+	}
+
+	@include media($large-tablet) {
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+		padding-left: 5%;
+	}
+
+	@include media($mobile) {
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+		padding-left: 5%;
+	}
+
+	@include media($small-mobile) {
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+		padding-left: 5%;
+	}
 }
 
 .aboutSkillSetList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 
 
 }
 
 .aboutSkillSetListItem {
-  background: $border-color;
-  padding: 4px;
-  border-radius: 5px;
-  margin: 5px;
+	background: $border-color;
+	padding: 4px;
+	border-radius: 5px;
+	margin: 5px;
 }
 
 .aboutSkillSetListItemName {
-  background: $contrast-color;
-  color: $header-text;
-  padding: 2px 10px;
-  border-radius: 5px;
+	background: $contrast-color;
+	color: $header-text;
+	padding: 2px 10px;
+	border-radius: 5px;
+}
+
+.python {
+	background: linear-gradient(#336CA0 50%, darken(#336CA0, 5%) 50%);
+	color: #F5C513;
+}
+
+.js {
+	background: linear-gradient(#EED646 50%, darken(#EED646, 12%) 50%);
+	color: #2C2D2A;
 }
 
 .html {
-  width: 90%;
+	background: linear-gradient(#E04522 50%, darken(#E04522, 8%) 50%);
+	color: #E8E8E8;
 }
 
-.javascript {
-  width: 80%;
-}
-
-.react {
-  width: 70%;
-}
-
-.jquery {
-  width: 70%;
-}
-
-.underscore {
-  width: 65%;
-}
-
-.backbone {
-  width: 70%;
+.sql {
+	background: linear-gradient(#00567F 50%, darken(#00567F, 5%) 50%);
+	color: lighten(#E08301, 10%);
 }
 
 .git {
-  width: 50%;
-}
-
-.ajax {
-  width: 60%;
-}
-
-.bourbon {
-  width: 75%;
-}
-
-.parse {
-  width: 55%;
+	background: linear-gradient(#EE472D 50%, darken(#EE472D, 10%) 50%);
+	color: #FFFFFF;
 }
 
 // PROJECTS //
 
 .projects {
-  min-height: 100vh;
-  background: $main-background-color;
-  color: $light-text-color;
-  position: relative;
-  padding: 115px 0 75px 0;
+	min-height: 100vh;
+	background: $main-background-color;
+	color: $light-text-color;
+	position: relative;
+	padding: 115px 0 75px 0;
 
-  @include media($large-tablet) {
-    width: 100%;
-    text-align: center;
-    padding-top: 75px;
-  }
+	@include media($large-tablet) {
+		width: 100%;
+		text-align: center;
+		padding-top: 75px;
+	}
 
-  @include media($mobile) {
-    width: 100%;
-    text-align: center;
-    padding-top: 75px;
-  }
+	@include media($mobile) {
+		width: 100%;
+		text-align: center;
+		padding-top: 75px;
+	}
 
-  @include media($small-mobile) {
-    width: 100%;
-    text-align: center;
-    padding-top: 75px;
-  }
+	@include media($small-mobile) {
+		width: 100%;
+		text-align: center;
+		padding-top: 75px;
+	}
 
 }
 
 .projectsHeader {
-  margin: 0 auto 40px auto;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: lighter;
-  color: $contrast-color;
+	margin: 0 auto 40px auto;
+	text-align: center;
+	font-size: 4rem;
+	font-weight: lighter;
+	color: $contrast-color;
 }
 
 .projectsList {
-  margin: 0;
-  padding: 0;
-  margin: 0 auto;
-  width: 90%;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+	width: 90%;
 }
 
 .projectsListItem {
-  box-sizing: border-box;
-  margin: 0 0 20px 0;
-  padding: 10px;
-  width: 50%;
-  display: inline-block;
+	box-sizing: border-box;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	width: 50%;
+	display: inline-block;
 
-  @include media($large-tablet) {
-    width: 100%;
-    padding: 0;
-  }
+	@include media($large-tablet) {
+		width: 100%;
+		padding: 0;
+	}
 
-  @include media($mobile) {
-    width: 100%;
-    padding: 0;
-  }
+	@include media($mobile) {
+		width: 100%;
+		padding: 0;
+	}
 
-  @include media($small-mobile) {
-    width: 100%;
-    padding: 0;
-  }
+	@include media($small-mobile) {
+		width: 100%;
+		padding: 0;
+	}
 }
 
 .projectListItemImageContainer {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
 }
 
 .projectListItemDescription {
-  position: absolute;
-  padding: 10px;
-  border-radius: 5px;
-  top: 0;
-  bottom: 4px;
-  left: 0;
-  right: 0;
-  background: $contrast-color;
-  opacity: 0;
-  transition: opacity .75s ease;
+	position: absolute;
+	padding: 10px;
+	border-radius: 5px;
+	top: 0;
+	bottom: 4px;
+	left: 0;
+	right: 0;
+	background: $contrast-color;
+	opacity: 0;
+	transition: opacity .75s ease;
 
-  &:hover {
-    opacity: .97;
-  }
+	&:hover {
+		opacity: .97;
+	}
 
-  @include media($large-tablet) {
-    position: relative;
-    opacity: 1;
-    margin-bottom: 20px;
-    background: none;
-    color: $contrast-color;
+	@include media($large-tablet) {
+		position: relative;
+		opacity: 1;
+		margin-bottom: 20px;
+		background: none;
+		color: $contrast-color;
 
-    &:hover {
-      opacity: 1;
-    }
-  }
+		&:hover {
+			opacity: 1;
+		}
+	}
 
-  @include media($mobile) {
-    position: relative;
-    opacity: 1;
-    margin-bottom: 20px;
-    background: none;
-    color: $contrast-color;
+	@include media($mobile) {
+		position: relative;
+		opacity: 1;
+		margin-bottom: 20px;
+		background: none;
+		color: $contrast-color;
 
-    &:hover {
-      opacity: 1;
-    }
-  }
+		&:hover {
+			opacity: 1;
+		}
+	}
 
-  @include media($small-mobile) {
-    position: relative;
-    opacity: 1;
-    margin-bottom: 20px;
-    background: none;
-    color: $contrast-color;
+	@include media($small-mobile) {
+		position: relative;
+		opacity: 1;
+		margin-bottom: 20px;
+		background: none;
+		color: $contrast-color;
 
-    &:hover {
-      opacity: 1;
-    }
-  }
+		&:hover {
+			opacity: 1;
+		}
+	}
 }
 
 .projectListItemDescriptionName {
-  font-size: 3rem;
-  font-weight: lighter;
-  color: $header-text;
-  margin: 5px auto 10px auto;
+	font-size: 3rem;
+	font-weight: lighter;
+	color: $header-text;
+	margin: 5px auto 10px auto;
 
-  @include media($small-desktop) {
-    font-size: 2rem;
-    margin: 2px auto 5px auto;
-  }
+	@include media($small-desktop) {
+		font-size: 2rem;
+		margin: 2px auto 5px auto;
+	}
 
-  @include media($large-tablet) {
-    font-size: 2.5rem;
-    color: $contrast-color;
-  }
+	@include media($large-tablet) {
+		font-size: 2.5rem;
+		color: $contrast-color;
+	}
 
-  @include media($mobile) {
-    font-size: 2.2rem;
-    color: $contrast-color;
-  }
+	@include media($mobile) {
+		font-size: 2.2rem;
+		color: $contrast-color;
+	}
 
-  @include media($small-mobile) {
-    font-size: 2rem;
-    color: $contrast-color;
-  }
+	@include media($small-mobile) {
+		font-size: 2rem;
+		color: $contrast-color;
+	}
 
 }
 
 .projectListItemDescriptionText {
-  font-size: 1.5rem;
-  letter-spacing: 1.1px;
-  // line-height: 3rem;
+	font-size: 1.5rem;
+	letter-spacing: 1.1px;
+	// line-height: 3rem;
 
-  @include media($small-desktop) {
-    font-size: 1.2rem;
-    margin: 0 0 20px 0;
-  }
+	@include media($small-desktop) {
+		font-size: 1.2rem;
+		margin: 0 0 20px 0;
+	}
 
-  @include media($large-tablet) {
-    font-size: 1.3rem;
-  }
+	@include media($large-tablet) {
+		font-size: 1.3rem;
+	}
 
-  @include media($mobile) {
-    font-size: 1.2rem;
-  }
+	@include media($mobile) {
+		font-size: 1.2rem;
+	}
 
-  @include media($small-mobile) {
-    font-size: 1rem;
-  }
+	@include media($small-mobile) {
+		font-size: 1rem;
+	}
 }
 
 .projectListItemDescriptionLink {
-  border: 1px solid $header-text;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: $header-text;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  font-size: 1.5rem;
+	border: 1px solid $header-text;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: $header-text;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 1.5rem;
 
-  &:hover {
-    background: $header-text;
-    color: $contrast-color;
-  }
+	&:hover {
+		background: $header-text;
+		color: $contrast-color;
+	}
 
-  @include media($small-desktop) {
-    font-size: 1.2rem;
-    margin: 0;
-  }
+	@include media($small-desktop) {
+		font-size: 1.2rem;
+		margin: 0;
+	}
 
-  @include media($large-tablet) {
-    color: $contrast-color;
-    font-size: 1.3rem;
-  }
+	@include media($large-tablet) {
+		color: $contrast-color;
+		font-size: 1.3rem;
+	}
 
-  @include media($mobile) {
-    color: $contrast-color;
-    font-size: 1.2rem;
-  }
+	@include media($mobile) {
+		color: $contrast-color;
+		font-size: 1.2rem;
+	}
 
-  @include media($small-mobile) {
-    color: $contrast-color;
-    font-size: 1rem;
-  }
+	@include media($small-mobile) {
+		color: $contrast-color;
+		font-size: 1rem;
+	}
 }
 
 .projectListItemImage {
-  width: 100%;
-  border-radius: 5px;
+	width: 100%;
+	border-radius: 5px;
 
 }
 
 // CONTACT //
 
 .contact {
-  min-height: calc(100vh - 50px);
-  background: $dark-background;
-  padding: 115px 10% 50px 10%;
-  color: $contrast-color;
-  @include clearfix;
+	min-height: calc(100vh - 50px);
+	background: $dark-background;
+	padding: 115px 10% 50px 10%;
+	color: $contrast-color;
+	@include clearfix;
 
-  @include media($large-tablet) {
-    padding: 75px 5% 50px 5%;
-  }
+	@include media($large-tablet) {
+		padding: 75px 5% 50px 5%;
+	}
 
-  @include media($mobile) {
-    padding: 75px 5% 50px 5%;
-  }
+	@include media($mobile) {
+		padding: 75px 5% 50px 5%;
+	}
 
-  @include media($small-mobile) {
-    padding: 75px 5% 50px 5%;
-  }
+	@include media($small-mobile) {
+		padding: 75px 5% 50px 5%;
+	}
 }
 
 .contactLeft {
-  width: 40%;
-  display: inline-block;
-  float: left;
+	width: 40%;
+	display: inline-block;
+	float: left;
 
-  @include media($large-tablet) {
-    width: 100%;
-  }
+	@include media($large-tablet) {
+		width: 100%;
+	}
 
-  @include media($mobile) {
-    width: 100%;
-  }
+	@include media($mobile) {
+		width: 100%;
+	}
 
-  @include media($small-mobile) {
-    width: 100%;
-  }
+	@include media($small-mobile) {
+		width: 100%;
+	}
 }
 
 .contactHeader {
-  font-size: 2rem;
-  margin: 0 0 15px 0;
-  font-weight: lighter;
+	font-size: 2rem;
+	margin: 0 0 15px 0;
+	font-weight: lighter;
 
-  @include media($large-tablet) {
-    font-size: 3rem;
-  }
+	@include media($large-tablet) {
+		font-size: 3rem;
+	}
 
-  @include media($mobile) {
-    font-size: 3rem;
-  }
+	@include media($mobile) {
+		font-size: 3rem;
+	}
 
-  @include media($small-mobile) {
-    font-size: 3rem;
-  }
+	@include media($small-mobile) {
+		font-size: 3rem;
+	}
 }
 
 .contactLinkWrap {
-  display: block;
-  margin: 5px 0;
+	display: block;
+	margin: 5px 0;
 }
 
 .contactIcon {
-  width: 25px;
+	width: 25px;
 }
 
 .contactLink {
-  // display: block;
-  text-decoration: none;
-  box-sizing: border-box;
-  color: $contrast-color;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  line-height: 2.25rem;
-  padding: 3px 18px;
-  border-radius: 3px;
-  transition: all .25s ease;
+	// display: block;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: $contrast-color;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	line-height: 2.25rem;
+	padding: 3px 18px;
+	border-radius: 3px;
+	transition: all .25s ease;
 
-  &:hover {
-    background: $contrast-color;
-    color: $light-text-color;
-  }
+	&:hover {
+		background: $contrast-color;
+		color: $light-text-color;
+	}
 
-  @include media($large-tablet) {
-    font-size: 1.3rem;
-  }
+	@include media($large-tablet) {
+		font-size: 1.3rem;
+	}
 
-  @include media($mobile) {
-    font-size: 1.15rem;
-  }
+	@include media($mobile) {
+		font-size: 1.15rem;
+	}
 
-  @include media($small-mobile) {
-    font-size: 1.15rem;
-  }
+	@include media($small-mobile) {
+		font-size: 1.15rem;
+	}
 }
 
 .contactRight {
-  width: 58%;
-  display: inline-block;
-  float: right;
-  text-align: right;
+	width: 58%;
+	display: inline-block;
+	float: right;
+	text-align: right;
 
-  @include media($large-tablet) {
-    margin-top: 10px;
-    width: 100%;
-    text-align: left;
-  }
+	@include media($large-tablet) {
+		margin-top: 10px;
+		width: 100%;
+		text-align: left;
+	}
 
-  @include media($mobile) {
-    margin-top: 10px;
-    width: 100%;
-    text-align: left;
-  }
+	@include media($mobile) {
+		margin-top: 10px;
+		width: 100%;
+		text-align: left;
+	}
 
-  @include media($small-mobile) {
-    margin-top: 10px;
-    width: 100%;
-    text-align: left;
-  }
+	@include media($small-mobile) {
+		margin-top: 10px;
+		width: 100%;
+		text-align: left;
+	}
 }
 
 .contactFormHeader {
-  font-weight: lighter;
-  font-size: 3rem;
-  margin: 0;
+	font-weight: lighter;
+	font-size: 3rem;
+	margin: 0;
 
-  @include media($large-tablet) {
-    font-size: 2.5rem;
-  }
+	@include media($large-tablet) {
+		font-size: 2.5rem;
+	}
 
-  @include media($mobile) {
-    font-size: 2.5rem;
-  }
+	@include media($mobile) {
+		font-size: 2.5rem;
+	}
 
-  @include media($small-mobile) {
-    font-size: 2.5rem;
-  }
+	@include media($small-mobile) {
+		font-size: 2.5rem;
+	}
 }
 
 .formElement {
-  box-sizing: border-box;
-  padding: 5px;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  margin: 10px 0;
-  border: none;
+	box-sizing: border-box;
+	padding: 5px;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	margin: 10px 0;
+	border: none;
 }
 
 .formTopRow {
-  width: 100%;
+	width: 100%;
 }
 
 .formName {
-  width: 45%;
-  margin-right: 10%;
+	width: 45%;
+	margin-right: 10%;
 }
 
 .formEmail {
-  width: 45%;
+	width: 45%;
 }
 
 .formComments {
-  width: 100%;
-  resize: none;
+	width: 100%;
+	resize: none;
 }
 
 .formSubmit {
-  width: 45%;
-  color: $light-text-color;
-  background: $contrast-color;
-  transition: all .25s ease;
+	width: 45%;
+	color: $light-text-color;
+	background: $contrast-color;
+	transition: all .25s ease;
 
-  &:hover {
-    background: white;
-    color: $contrast-color;
-  }
+	&:hover {
+		background: white;
+		color: $contrast-color;
+	}
 }
 
 // FOOTER //
 
 .footer {
-  background: $dark-background;
-  padding: 0 10%;
+	background: $dark-background;
+	padding: 0 10%;
 
-  @include media($large-tablet) {
-    padding: 0 5%;
-  }
+	@include media($large-tablet) {
+		padding: 0 5%;
+	}
 
-  @include media($mobile) {
-    padding: 0 5%;
-  }
+	@include media($mobile) {
+		padding: 0 5%;
+	}
 
-  @include media($small-mobile) {
-    padding: 0 5%;
-  }
+	@include media($small-mobile) {
+		padding: 0 5%;
+	}
 }
 
 .footerText {
-  border-top: 1px solid $dark-background-border;
-  color: rgba(237, 115, 49, .4);
-  margin: 0;
-  padding: 10px 0 20px 0;
+	border-top: 1px solid $dark-background-border;
+	color: rgba(237, 115, 49, .4);
+	margin: 0;
+	padding: 10px 0 20px 0;
 }
