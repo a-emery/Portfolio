@@ -122,6 +122,7 @@ body {
 	}
 
 	@include media($small-mobile) {
+		background-attachment: scroll;
 		height: 1000px;
 	}
 }
@@ -1037,6 +1038,7 @@ body {
 	color: $light-text-color;
 	background: $contrast-color;
 	transition: all .25s ease;
+	-webkit-appearance: none;
 
 	&:hover {
 		background: white;

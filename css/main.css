@@ -84,6 +84,7 @@ body {
       height: 1000px; } }
   @media screen and (max-width: 480px) {
     .hero {
+      background-attachment: scroll;
       height: 1000px; } }
 
 .heroCover {
@@ -826,7 +827,8 @@ body {
   width: 45%;
   color: #d0d0d0;
   background: #ed7331;
-  transition: all .25s ease; }
+  transition: all .25s ease;
+  -webkit-appearance: none; }
   .formSubmit:hover {
     background: white;
     color: #ed7331; }
