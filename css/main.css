@@ -133,7 +133,7 @@ body {
       display: none; } }
 
 .hamburgerImageContainer {
-  background: rgba(31, 44, 56, 0.9);
+  background: #1f2c38;
   display: none;
   position: fixed;
   top: 0;
@@ -197,7 +197,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: rgba(31, 44, 56, 0.9);
+  background: #1f2c38;
   transition: all .1s ease;
   z-index: 1; }
 
