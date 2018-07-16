@@ -6,6 +6,7 @@
 $header-text: rgba(221, 221, 221, 1);
 $body-color: rgba(31, 44, 56, 1);
 $body-color-overlay: rgba(31, 44, 56, .9);
+$mobile-header: rgba(31, 44, 56, 1);
 $contrast-color: rgba(237, 115, 49, 1);
 $main-background-color: rgba(239, 251, 254, 1);
 $light-text-color: rgba(208, 208, 208, 1);
@@ -182,7 +183,7 @@ body {
 }
 
 .hamburgerImageContainer {
-	background: $body-color-overlay;
+	background: $mobile-header;
 	display: none;
 	position: fixed;
 	top: 0;
@@ -255,7 +256,7 @@ body {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	background: $body-color-overlay;
+	background: $mobile-header;
 	transition: all .1s ease;
 	z-index: 1;
 }
